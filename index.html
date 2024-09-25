@@ -640,12 +640,12 @@
             /* console.log(rotateImg) */
 
             //스크롤 이미지 회전
-            rotateImg.style.transform = `rotate(${scrollX}deg)`;
+            rotateImg.style.transform = `rotate(${scrollX / 4}deg)`;
             //스크롤 이미지 회전
 
             //big_text 이동
             const maxScrollX = scroll_Container.scrollWidth - scroll_Container.clientWidth; // 스크롤 가능한 최대 수평 값
-            const maxLeft = 94; // big_text가 이동할 수 있는 최대 left 비율(기본 6%에서 최대 50%)
+            const maxLeft = 114; // big_text가 이동할 수 있는 최대 left 비율(기본 6%에서 최대 50%)
 
             if (scrollX >= 8000) {
                 const leftPercentage = Math.min((scrollX - 8000) / (maxScrollX - 8000) * maxLeft, maxLeft);
